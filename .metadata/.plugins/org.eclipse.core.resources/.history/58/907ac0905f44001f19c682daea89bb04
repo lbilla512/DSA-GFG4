@@ -1,0 +1,23 @@
+package com.example.demo;
+
+public class GCD {
+
+	static int findGCD(int firstNumber, int secondNumber) {
+		int divisor = (firstNumber > secondNumber)?secondNumber:firstNumber;
+		int value = (firstNumber > secondNumber)?firstNumber:secondNumber;
+		while(divisor > 0) {	
+			int interValue = value % divisor;
+			System.out.println("inter value "+interValue);
+			if(interValue == 0) return divisor;
+			 divisor = interValue;
+			// value = (firstNumber > secondNumber)?firstNumber:secondNumber;
+			
+		}
+		return 1;
+		
+	} 
+	public static void main(String[] args) {
+		System.out.println(findGCD(4,6));
+	}
+	
+}
