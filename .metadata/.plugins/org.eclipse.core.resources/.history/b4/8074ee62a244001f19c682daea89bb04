@@ -1,0 +1,13 @@
+package com.example.demo;
+
+public class PrimeNumber {
+
+	static boolean isPrimerNumber(int input) {
+		
+		return true;
+	}
+	public static void main(String[] args) {
+		
+		System.out.println(isPrimerNumber(13));
+	}
+}

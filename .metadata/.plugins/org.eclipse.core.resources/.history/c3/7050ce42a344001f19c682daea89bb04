@@ -1,0 +1,23 @@
+package com.example.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrimeNumber {
+
+	List<Boolean> primes = new ArrayList<Boolean>();
+	PrimeNumber(){
+		
+	}
+	
+	Boolean isPrimerNumber(int input) {
+		
+		return primes.get(input);
+		
+	}
+	public static void main(String[] args) {
+		PrimeNumber primeNuber = new PrimeNumber();
+		
+		System.out.println(primeNuber.isPrimerNumber(13));
+	}
+}
