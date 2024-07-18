@@ -1,0 +1,13 @@
+package com.example.demo;
+
+public class PrimeNumber {
+
+	static boolean isPrimeNumber(int number) {
+		
+		
+	}
+	public static void main(String[]  args) {
+		
+	}
+	
+}
