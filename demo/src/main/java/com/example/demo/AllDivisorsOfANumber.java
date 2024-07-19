@@ -6,7 +6,7 @@ public class AllDivisorsOfANumber {
         for(int i =1; i*i <= input; i++){
            if(input % i == 0){
                System.out.println(i);
-               if(i != input /i) {
+               if(i  != input /i) {
                    System.out.println(input / i);
                }
            }
