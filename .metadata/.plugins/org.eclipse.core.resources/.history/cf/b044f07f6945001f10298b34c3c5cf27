@@ -1,0 +1,18 @@
+package com.example.demo;
+
+public class PrimeFactors {
+
+	static int[] findPrimeFactors(int input) {
+		return null;
+		
+	}
+	public static void main(String[] args) {
+		
+		int[] result = findPrimeFactors(12);
+		for(int  i: result) {
+			System.out.println(i);	
+		}
+		
+	}
+	
+}

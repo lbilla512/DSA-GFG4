@@ -1,0 +1,53 @@
+package com.example.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrimeFactors {
+
+	static boolean isPrime(int input) {
+		if(input  == 1) {
+			return false;
+		}
+		for(int i = 2 ;i*i < input; i++) {
+			if(input % i == 0) {
+				return false;
+			}				
+		}	
+		return true;
+	}
+	
+	static List<Integer> findPrimeFactors(int input) {
+		List<Integer> result = new ArrayList();
+		if(input  == 1 || isPrime(input)) {
+			result.add(input);
+			return result;
+		}		
+		
+		for(int i = 2; i < input; i++) {
+			if(isPrime(i)) {
+				if(input % i == 0) {
+					result.add(i);
+					input = input / i;				
+				}else {
+					continue;
+				}	
+			}
+			else {
+				continue;
+			}
+		}
+		
+		return result;
+		
+	}
+	public static void main(String[] args) {
+		
+		List<Integer> result = findPrimeFactors(12);
+		for(int  i: result) {
+			System.out.println(i);	
+		}
+		
+	}
+	
+}
